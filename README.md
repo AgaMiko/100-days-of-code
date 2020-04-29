@@ -36,15 +36,23 @@ My notebooks:
 
 ## Day 5
 Implemented DCGAN from pytorch tutorial.
- * Experimented with latent size (input for Generator) and feature map sizes 
- * Added soft and noisy labels
- * Added Wasserstein loss which is a good solution for mode collapse
-  * Wasserstein loss - https://developers.google.com/machine-learning/gan/loss
-  * mode collapse - https://machinelearningmastery.com/practical-guide-to-gan-failure-modes/
- * Added dropout in both generator and discriminator
+  * Experimented with latent size (input for Generator) and feature map sizes 
+  * Added soft and noisy labels
+  * Added Wasserstein loss which is a good solution for mode collapse
+    * Wasserstein loss - https://developers.google.com/machine-learning/gan/loss
+    * mode collapse - https://machinelearningmastery.com/practical-guide-to-gan-failure-modes/
+  * Added dropout in both generator and discriminator
 
 * [DCGAN Tutorial](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
+
+### Dataset
+![](images/random_chars.png)
+
+* [Download dataset here](https://github.com/AgaMiko/pixel_character_generator)
+
+
+### Results
 * [My final code with modified DCGAN](https://github.com/AgaMiko/pixel_character_generator/blob/master/notebooks/3_DCGAN.ipynb)
 
- 
+ ![](images/real_fake.png)
  
