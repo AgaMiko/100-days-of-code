@@ -1,5 +1,5 @@
 # 100-days-of-code
-My 100 days journey with coding to improve my Machine Learning, Deep Learning, Data Science skills
+My 100 days journey with coding to improve my Machine Learning, Deep Learning, Data Science skills. Posting current updates on twitter: https://twitter.com/AgnMikolajczyk
 
 ## Day 1
 I continued with wav2wav #autoencoder for audio style transfer. Loss decreased gradually during the training, so I've started writing audio generation script Nuty Also, I've added json configuration files with parameters of e.g. melspectrogram.
@@ -56,3 +56,26 @@ Implemented DCGAN from pytorch tutorial.
 
  ![](images/real_fake.png)
  
+## Day 6
+Today practiced a bit with custom data loaders in pytorch: https://pytorch.org/tutorials/beginner/data_loading_tutorial.html
+Started writing generator code for my wav-to-wav autoencoder.
+
+## Day 7
+First week finished! Today, I've experimented with a XLA for TPU with multiprocessing, the notebook shared on Kaggle for Flower classification challenge.  https://kaggle.com/dhananjay3/fast-pytorch-xla-for-tpu-with-multiprocessing
+https://www.kaggle.com/c/flower-classification-with-tpus/notebooks?sortBy=relevance&group=everyone&search=pytorch&page=1&pageSize=20&competitionId=18278
+
+## Day 8
+Continued having fun with #GenerativeAdversarialNetwork - this time Conditional GANs on retro pixel game dataset - http://github.com/AgaMiko/pixel_character_generator
+I've managed to modify code and run the training, can't wait to see the results
+
+## Day 9
+Today finished Conditional DCGAN experiments! GAN generates a pixel character seen from selected angle.
+
+* different learning rate for discriminator and generator
+* soft labels
+* added classification loss to the discriminator. Discriminator have to guess fake/real but also the character angle
+* generator is conditioned with embedding from trainable look-up table that gives the info about the character view angle
+
+![](https://github.com/AgaMiko/pixel_character_generator/blob/master/images/CGAN.PNG)
+
+* [notebook with modified Conditional DCGAN](https://github.com/AgaMiko/pixel_character_generator/blob/master/notebooks/4_Conditional_DCGAN.ipynb)
